@@ -1,0 +1,7 @@
+
+    <div class="item" ng-repeat="item in list" ng-show="($index + 1) == count">item #{{item}}</div>
+  </div>
+  <br>
+  <ul class="nav-container">
+    <li ng-class="{'active': count == $index + 1}" class="btn-nav" ng-repeat="item in list" ng-click="NavTo($index + 1)">{{item}}</li>
+  </ul>
